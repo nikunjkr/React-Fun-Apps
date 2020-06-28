@@ -1,15 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+var style={
+  background:'blue',
+  color: 'white' ,
+  fontFamily: 'Arial'
+  
 
+  
+}
 
-const title =React.createElement(
-  'h1',
-  {id:'title',classname:'header'},
-  'Hello to React\'s World'
-)
+//  using ES6 syntax 
 
 ReactDOM.render(
-  title,
+  <div style={style}>
+    <h1 id="heading-element">Hello to react's World</h1>
+    <p>
+      React is a javascript library that makes frontend look cool.
+    </p>
+  </div>,
   document.getElementById('root')
+
 )
